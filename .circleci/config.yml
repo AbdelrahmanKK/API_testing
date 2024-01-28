@@ -3,6 +3,17 @@ jobs:
   build:
     docker:
       - image: cimg/node:11
+    steps:
+      - checkout
+      - run:
+          name: Install npm dependencies
+          command: |
+            npm install --save
+      - run:
+          name: Run Unit Tests
+          command: |
+            npm run dev < /dev/null & npm test   
+                 
 workflows:
   test:
     jobs:
