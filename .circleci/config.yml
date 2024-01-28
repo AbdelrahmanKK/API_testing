@@ -1,19 +1,8 @@
-version: 2.1
-jobs:
-  run_tests:
-    docker:
-      - image: circleci/node:20
-    steps:
-      - checkout
-      - run:
-          name: Install npm dependencies
-          command: |
-            npm install --save
-      - run:
-          name: Run Unit Tests
-          command: npm run dev < /dev/null & npm test
+version: '2.1'
+orbs:
+  node: circleci/node@x.y
 workflows:
-  build_test:
+  test:
     jobs:
-      - run_tests
-      
+      - node/test:
+          test-results-for: jest
