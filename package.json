@@ -12,7 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0",
-    "jest-html-reporter": "^3.10.2"
+    "jest-html-reporter": "^3.10.2",
+    "supertest": "^6.3.4"
   },
   "dependencies": {
     "mock-user-auth": "^1.0.15"
