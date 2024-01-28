@@ -10,13 +10,22 @@ jobs:
           command: |
             npm install --save
       - run:
-          name: Run Unit Tests
+          name: Run Server
           command: |
-            npm run dev < /dev/null & npx jest testing.test.js   
+            npm run dev 
+          background: true
+      - run:
+          name: Wait for Server
+          command: sleep 5
+      - run:
+          name: Run Tests
+          command: |
+            npx jest testing.test.js   
+          
+
+      
                  
 workflows:
   test:
     jobs:
         - build
-      # - node/test:
-      #     test-results-for: jest
