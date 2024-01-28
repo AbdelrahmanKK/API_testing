@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Run Unit Tests
           command: |
-            npm run dev < /dev/null & npm test   
+            npm run dev < /dev/null & npx jest testing.test.js   
                  
 workflows:
   test:
