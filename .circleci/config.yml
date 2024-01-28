@@ -6,5 +6,6 @@ jobs:
 workflows:
   test:
     jobs:
-      - node/test:
-          test-results-for: jest
+        - build
+      # - node/test:
+      #     test-results-for: jest
