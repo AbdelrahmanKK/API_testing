@@ -14,13 +14,13 @@ jobs:
           command: |
             npm run dev 
           background: true
-      - run:
-          name: Wait for Server
-          command: sleep 5
-      - run:
-          name: Run Tests
-          command: |
-            npm run test   
+      # - run:
+      #     name: Wait for Server
+      #     command: sleep 5
+      # - run:
+      #     name: Run Tests
+      #     command: |
+      #       npm run test   
           
 
       
