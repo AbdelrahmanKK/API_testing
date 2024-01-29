@@ -16,6 +16,7 @@ module.exports = {
   // if this is not specified, the test source must be passed as the second argument to the test runner.
 //   src_folders: ['test','nightwatch/examples'],
   src_folders: ['nightwatch_tests'],
+  output_folder: 'tests_output',
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
 //   page_objects_path: ['nightwatch/page-objects'],
