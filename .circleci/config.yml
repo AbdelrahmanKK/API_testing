@@ -30,9 +30,9 @@
 
 
 version: 2.1
-  orbs: 
-    node: circleci/node@4.7 
-    browser-tools: circleci/browser-tools@1.1.0 
+  # orbs: 
+  node: circleci/node@4.7 
+  browser-tools: circleci/browser-tools@1.1.0 
   jobs: 
     test: 
       docker: 
@@ -41,11 +41,11 @@ version: 2.1
         - checkout 
         - browser-tools/install-browser-tools 
         - node/install-packages 
-  - run:
-      command: |
-        npm run test 
-  - store_test_results:
-      path: /tests_output
+        - run:
+            command: |
+              npm run test 
+        - store_test_results:
+            path: /tests_output
 
 
 workflows:
