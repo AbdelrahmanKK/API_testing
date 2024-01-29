@@ -45,7 +45,7 @@ jobs:
       - node/install-packages 
       - run:
           command: |
-            npm run test 
+            npm run test:nightwatch 
       - store_test_results:
           path: /tests_output
 
