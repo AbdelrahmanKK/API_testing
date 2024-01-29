@@ -47,7 +47,7 @@ jobs:
           command: |
             npm run test:nightwatch 
       - store_test_results:
-          path: ${CIRCLE_TEST_REPORTS}/tests_output
+          path: tests-results
                     
 
 
