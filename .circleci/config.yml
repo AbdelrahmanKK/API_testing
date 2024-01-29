@@ -48,6 +48,8 @@ jobs:
             npm run test:nightwatch 
       - store_test_results:
           path: tests-results
+      - store_artifacts:
+          path: tests-results
                     
 
 
