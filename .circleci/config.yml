@@ -51,4 +51,4 @@ jobs:
 workflows:
   e2e-test:
     jobs:
-      - test
+        - test
