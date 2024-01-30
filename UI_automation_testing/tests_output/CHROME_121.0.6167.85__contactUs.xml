@@ -5,9 +5,9 @@
 
   <testsuite name="contactUs"
     errors="0" failures="3" hostname="" id="" package="contactUs" skipped="0"
-    tests="11" time="126.9" timestamp="">
+    tests="11" time="126.2" timestamp="">
   
-    <testcase name="error message content" classname="contactUs" time="5.830" assertions="3">
+    <testcase name="error message content" classname="contactUs" time="6.327" assertions="3">
 
     
 
@@ -16,7 +16,7 @@
     
     </testcase>
   
-    <testcase name="required fields only" classname="contactUs" time="1.819" assertions="3">
+    <testcase name="required fields only" classname="contactUs" time="1.740" assertions="3">
 
     
 
@@ -25,7 +25,7 @@
     
     </testcase>
   
-    <testcase name="all fields" classname="contactUs" time="6.575" assertions="3">
+    <testcase name="all fields" classname="contactUs" time="6.072" assertions="3">
 
     
 
@@ -34,7 +34,7 @@
     
     </testcase>
   
-    <testcase name="without email" classname="contactUs" time="5.855" assertions="3">
+    <testcase name="without email" classname="contactUs" time="5.729" assertions="3">
 
     
 
@@ -43,7 +43,7 @@
     
     </testcase>
   
-    <testcase name="without message" classname="contactUs" time="5.734" assertions="3">
+    <testcase name="without message" classname="contactUs" time="5.800" assertions="3">
 
     
 
@@ -52,7 +52,7 @@
     
     </testcase>
   
-    <testcase name="without subject heading" classname="contactUs" time="6.032" assertions="3">
+    <testcase name="without subject heading" classname="contactUs" time="5.976" assertions="3">
 
     
 
@@ -61,7 +61,7 @@
     
     </testcase>
   
-    <testcase name="invalid email address" classname="contactUs" time="5.841" assertions="3">
+    <testcase name="invalid email address" classname="contactUs" time="5.940" assertions="3">
 
     
 
@@ -70,30 +70,30 @@
     
     </testcase>
   
-    <testcase name="invalid email address with special character" classname="contactUs" time="11.04" assertions="2">
+    <testcase name="invalid email address with special character" classname="contactUs" time="10.80" assertions="2">
 
-      <failure message="Testing if element &lt;Element [name=@alert]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5139ms)">    at invalid email address with special character (/Users/mn3n3/Documents/GitHub/Software_Testing_Task/UI_automation_testing/nightwatch_tests/contactUs.js:145:19)</failure>
-
-    
-    </testcase>
-  
-    <testcase name="invalid email address with double dot in the middle" classname="contactUs" time="1.850" assertions="3">
-
-    
-
-    
+      <failure message="Testing if element &lt;Element [name=@alert]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5137ms)">    at invalid email address with special character (/Users/mn3n3/Documents/GitHub/Software_Testing_Task/UI_automation_testing/nightwatch_tests/contactUs.js:145:19)</failure>
 
     
     </testcase>
   
-    <testcase name="invalid message" classname="contactUs" time="11.14" assertions="2">
+    <testcase name="invalid email address with double dot in the middle" classname="contactUs" time="1.873" assertions="3">
 
-      <failure message="Testing if element &lt;Element [name=@alert]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5133ms)">    at invalid message (/Users/mn3n3/Documents/GitHub/Software_Testing_Task/UI_automation_testing/nightwatch_tests/contactUs.js:184:19)</failure>
+    
+
+    
 
     
     </testcase>
   
-    <testcase name="invalid file extension" classname="contactUs" time="1.723" assertions="2">
+    <testcase name="invalid message" classname="contactUs" time="10.97" assertions="2">
+
+      <failure message="Testing if element &lt;Element [name=@alert]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5149ms)">    at invalid message (/Users/mn3n3/Documents/GitHub/Software_Testing_Task/UI_automation_testing/nightwatch_tests/contactUs.js:184:19)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="invalid file extension" classname="contactUs" time="1.857" assertions="2">
 
     
 

@@ -157,7 +157,7 @@ module.exports = {
           .navigate()
           .waitForElementVisible('body')
           .setValue("@subject_heading","Customer service")
-          .setValue("@email","hello@gmail..com.")
+          .setValue("@email","hello@gmail..com")
           .setValue("@message","Dear, i hope this message finds you well")
           .click("@submitButton")
           .assert.elementPresent("@alert")
