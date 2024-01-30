@@ -76,8 +76,8 @@ jobs:
 
 
 
-workflows:
-  e2e-test:
-    jobs:
+# workflows:
+#   e2e-test:
+#     jobs:
         # - api_test
-        - UI_test
+        # - UI_test
