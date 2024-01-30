@@ -9,7 +9,7 @@
   
     <testcase name="invalid file extension" classname="contactUs" time="10.65" assertions="2">
 
-      <failure message="Testing if element &lt;Element [name=@success]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5143ms)">    at invalid file extension (/Users/mn3n3/Documents/GitHub/API_testing/UI automation testing/nightwatch_tests/contactUs.js:204:19)</failure>
+      <failure message="Testing if element &lt;Element [name=@success]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5143ms)">    at invalid file extension (/Users/mn3n3/Documents/GitHub/API_testing/UI_automation_testing/nightwatch_tests/contactUs.js:204:19)</failure>
 
     
     </testcase>

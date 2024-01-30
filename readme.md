@@ -20,6 +20,6 @@ The tests covered Performing search for "dress" and Verifying the search results
 
 ### Deliverables:
 
--  HTML report for the results. [here](UI%20automation%20testing/tests_output/nightwatch-html-report/index.html)
+-  HTML report for the results. [here](UI_automation_testing/tests_output/nightwatch-html-report/index.html)
 -  Bugs Report
 -  document for the test cases.

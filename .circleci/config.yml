@@ -58,7 +58,7 @@ jobs:
           command: |
             npm run test:jest 
       - store_artifacts:
-          path: API testing/tests_output
+          path: API_testing/tests_output
           
   UI_test: 
     docker: 
@@ -71,7 +71,7 @@ jobs:
           command: |
             npm run test:nightwatch 
       - store_artifacts:
-          path: UI automation testing/tests_output/nightwatch-html-report
+          path: UI_automation_testing/tests_output/nightwatch-html-report
                     
 
 

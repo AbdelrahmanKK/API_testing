@@ -2,7 +2,7 @@ const supertest = require('supertest');
 const request = supertest('http://localhost:3000');
 
 
-describe('API testing', () => {
+describe('API_testing', () => {
     let token;
 
     test('should create new user and return user token', async () => {

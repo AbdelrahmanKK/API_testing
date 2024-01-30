@@ -16,11 +16,11 @@ module.exports = {
   // if this is not specified, the test source must be passed as the second argument to the test runner.
 //   src_folders: ['test','nightwatch/examples'],
   skip_testcases_on_fail: false,
-  src_folders: ['UI automation testing/nightwatch_tests'],
-  output_folder: 'UI automation testing/tests_output',
+  src_folders: ['UI_automation_testing/nightwatch_tests'],
+  output_folder: 'UI_automation_testing/tests_output',
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
-  page_objects_path: ['UI automation testing/page-objects'],
+  page_objects_path: ['UI_automation_testing/page-objects'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
 //   custom_commands_path: ['nightwatch/custom-commands'],
