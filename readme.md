@@ -33,7 +33,7 @@ Testing was done using [jest](https://jestjs.io/) as a test runner
 
 ### Deliverables:
 
-- HTML for test results. [here](API_testing/tests_output/test-report.html)
+- HTML for test results. [here](https://output.circle-artifacts.com/output/job/f00ba8f5-6a43-4f98-af91-affbbb09e575/artifacts/0/API_testing/tests_output/test-report.html)
 -  Bugs Report
 
 
