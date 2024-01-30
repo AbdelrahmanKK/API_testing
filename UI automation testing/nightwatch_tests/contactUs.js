@@ -198,13 +198,13 @@ module.exports = {
           .setValue("@subject_heading","Customer service")
           .setValue("@message","     ")
           .setValue("@order_reference","demo_2")
-          .setValue("@attach_file", __dirname + '/test_upload_files/valid_file_upload.txt')
+          .setValue("@attach_file", __dirname + '/test_upload_files/invalid_file_upload.xtx')
           .click("@submitButton")
         //   .assert.elementPresent("@alert")
           .assert.elementPresent("@success")
   
         browser.end();  // Close the browser session
-        console.log(__dirname + '/test_upload_files/invalid_file_upload.err')
+        console.log(__dirname + '/test_upload_files/invalid_file_upload.xtx')
       },
   
   };
