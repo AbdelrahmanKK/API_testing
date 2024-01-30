@@ -67,8 +67,8 @@ jobs:
       - run:
           command: |
             npm run test:nightwatch 
-      # - store_artifacts:
-      #     path: tests_output
+      - store_artifacts:
+          path: tests_output
                     
 
 
