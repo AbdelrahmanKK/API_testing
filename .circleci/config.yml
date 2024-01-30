@@ -57,6 +57,9 @@ jobs:
           name: Run Tests
           command: |
             npm run test:jest 
+      - store_artifacts:
+          path: API testing/tests_output
+          
   UI_test: 
     docker: 
       - image: cimg/node:lts-browsers 
@@ -68,7 +71,7 @@ jobs:
           command: |
             npm run test:nightwatch 
       - store_artifacts:
-          path: tests_output
+          path: UI automation testing/tests_output/nightwatch-html-report
                     
 
 
