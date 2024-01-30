@@ -1,191 +1,191 @@
 module.exports = {
         
-    // 'error message content': function (browser) {
-    //     const contactUsPage = browser.page.contactUsPage();
+    'error message content': function (browser) {
+        const contactUsPage = browser.page.contactUsPage();
 
-    //     contactUsPage
-    //       .navigate()
-    //       .waitForElementVisible('body')
-    //       .click('@submitButton')
-    //       .assert.elementPresent('@alert')
-    //       .api.elements('css selector',"@errorList" , function(result) {
-    //         this.assert.equal(result.value.length, 3, 'list contains 3 items');
-    //       })
+        contactUsPage
+          .navigate()
+          .waitForElementVisible('body')
+          .click('@submitButton')
+          .assert.elementPresent('@alert')
+          .api.elements('css selector',"@errorList" , function(result) {
+            this.assert.equal(result.value.length, 3, 'list contains 3 items');
+          })
         
-    //     browser.end();  
+        browser.end();  
         
-    //   },
+      },
   
-    // 'required fields only': function (browser) {
+    'required fields only': function (browser) {
 
-    //   const contactUsPage = browser.page.contactUsPage();
+      const contactUsPage = browser.page.contactUsPage();
 
-    //   contactUsPage
-    //     .navigate()
-    //     .waitForElementVisible('body')
-    //     .setValue("@subject_heading","Customer service")
-    //     .setValue("@email","hello@gmail.com")
-    //     .setValue("@message","Dear, i hope this message finds you well")
-    //     .click("@submitButton")
-    //     .assert.not.elementPresent("@alert")
-    //     .assert.elementPresent("@success")
+      contactUsPage
+        .navigate()
+        .waitForElementVisible('body')
+        .setValue("@subject_heading","Customer service")
+        .setValue("@email","hello@gmail.com")
+        .setValue("@message","Dear, i hope this message finds you well")
+        .click("@submitButton")
+        .assert.not.elementPresent("@alert")
+        .assert.elementPresent("@success")
 
-    //   browser.end();  
-    // },
+      browser.end();  
+    },
 
 
-    // 'all fields': function (browser) {
+    'all fields': function (browser) {
 
-    //     const contactUsPage = browser.page.contactUsPage();
+        const contactUsPage = browser.page.contactUsPage();
 
-    //     contactUsPage
-    //       .navigate()
-    //       .waitForElementVisible('body')
-    //       .setValue("@subject_heading","Customer service")
-    //       .setValue("@message","Dear, i hope this message finds you well")
-    //       .setValue("@email","hello@gmail.com")
-    //       .setValue("@order_reference","demo_2")
-    //       .setValue("@attach_file", __dirname + '/test_upload_files/valid_file_upload.txt')
-    //       .click("@submitButton")
-    //       .assert.not.elementPresent("@alert")
-    //       .assert.elementPresent("@success")
+        contactUsPage
+          .navigate()
+          .waitForElementVisible('body')
+          .setValue("@subject_heading","Customer service")
+          .setValue("@message","Dear, i hope this message finds you well")
+          .setValue("@email","hello@gmail.com")
+          .setValue("@order_reference","demo_2")
+          .setValue("@attach_file", __dirname + '/test_upload_files/valid_file_upload.txt')
+          .click("@submitButton")
+          .assert.not.elementPresent("@alert")
+          .assert.elementPresent("@success")
     
-    //     browser.end();  
-    //   },
+        browser.end();  
+      },
 
-    // 'without email': function (browser) {
+    'without email': function (browser) {
 
-    //     const contactUsPage = browser.page.contactUsPage();
-    //     contactUsPage
-    //       .navigate()
-    //       .waitForElementVisible('body')
-    //       .setValue("@subject_heading","Customer service")
-    //       .setValue("@message","Dear, i hope this message finds you well")
-    //       .setValue("@order_reference","demo_2")
-    //       .setValue("@attach_file", __dirname + '/test_upload_files/valid_file_upload.txt')
-    //       .click("@submitButton")
-    //       .assert.elementPresent("@alert")
-    //       .assert.containsText("@errorMessage", "Invalid email address.")
+        const contactUsPage = browser.page.contactUsPage();
+        contactUsPage
+          .navigate()
+          .waitForElementVisible('body')
+          .setValue("@subject_heading","Customer service")
+          .setValue("@message","Dear, i hope this message finds you well")
+          .setValue("@order_reference","demo_2")
+          .setValue("@attach_file", __dirname + '/test_upload_files/valid_file_upload.txt')
+          .click("@submitButton")
+          .assert.elementPresent("@alert")
+          .assert.containsText("@errorMessage", "Invalid email address.")
   
          
-    //     browser.end();  // Close the browser session
-    //   },
+        browser.end();  // Close the browser session
+      },
   
 
-    // 'without message': function (browser) {
+    'without message': function (browser) {
         
-    //     const contactUsPage = browser.page.contactUsPage();
+        const contactUsPage = browser.page.contactUsPage();
 
-    //     contactUsPage
-    //       .navigate()
-    //       .waitForElementVisible('body')
-    //       .setValue("@subject_heading","Customer service")
-    //       .setValue("@email","hello@gmail.com")
-    //       .setValue("@order_reference","demo_2")
-    //       .setValue("@attach_file", __dirname + '/test_upload_files/valid_file_upload.txt')
-    //       .click("@submitButton")
-    //       .assert.elementPresent("@alert")
-    //       .assert.containsText("@errorMessage", "The message cannot be blank.")
+        contactUsPage
+          .navigate()
+          .waitForElementVisible('body')
+          .setValue("@subject_heading","Customer service")
+          .setValue("@email","hello@gmail.com")
+          .setValue("@order_reference","demo_2")
+          .setValue("@attach_file", __dirname + '/test_upload_files/valid_file_upload.txt')
+          .click("@submitButton")
+          .assert.elementPresent("@alert")
+          .assert.containsText("@errorMessage", "The message cannot be blank.")
   
          
-    //     browser.end();  // Close the browser session
-    //   },
+        browser.end();  // Close the browser session
+      },
   
 
-    // 'without subject heading': function (browser) {
+    'without subject heading': function (browser) {
         
-    //     const contactUsPage = browser.page.contactUsPage();
+        const contactUsPage = browser.page.contactUsPage();
 
-    //     contactUsPage
-    //         .navigate()
-    //         .waitForElementVisible('body')
-    //         .setValue("@email","hello@gmail.com")
-    //         .setValue("@message","Dear, i hope this message finds you well")
-    //         .setValue("@order_reference","demo_2")
-    //         .setValue("@attach_file", __dirname + '/test_upload_files/valid_file_upload.txt')
-    //         .click("@submitButton")
-    //         .assert.elementPresent("@alert")
-    //         .assert.containsText("@errorMessage", "Please select a subject from the list provided.")
+        contactUsPage
+            .navigate()
+            .waitForElementVisible('body')
+            .setValue("@email","hello@gmail.com")
+            .setValue("@message","Dear, i hope this message finds you well")
+            .setValue("@order_reference","demo_2")
+            .setValue("@attach_file", __dirname + '/test_upload_files/valid_file_upload.txt')
+            .click("@submitButton")
+            .assert.elementPresent("@alert")
+            .assert.containsText("@errorMessage", "Please select a subject from the list provided.")
 
             
-    //     browser.end();  // Close the browser session
-    // },
+        browser.end();  // Close the browser session
+    },
   
 
-    // 'invalid email address': function (browser) {
+    'invalid email address': function (browser) {
 
-    //   const contactUsPage = browser.page.contactUsPage();
+      const contactUsPage = browser.page.contactUsPage();
 
-    //   contactUsPage
-    //     .navigate()
-    //     .waitForElementVisible('body')
-    //     .setValue("@subject_heading","Customer service")
-    //     .setValue("@email","hello.gmail.com")
-    //     .setValue("@message","Dear, i hope this message finds you well")
-    //     .click("@submitButton")
-    //     .assert.elementPresent("@alert")
-    //     .assert.containsText("@errorMessage", "Invalid email address.")
+      contactUsPage
+        .navigate()
+        .waitForElementVisible('body')
+        .setValue("@subject_heading","Customer service")
+        .setValue("@email","hello.gmail.com")
+        .setValue("@message","Dear, i hope this message finds you well")
+        .click("@submitButton")
+        .assert.elementPresent("@alert")
+        .assert.containsText("@errorMessage", "Invalid email address.")
 
        
-    //   browser.end();  
-    // },
+      browser.end();  
+    },
 
 
-    // 'invalid email address with special character': function (browser) {
+    'invalid email address with special character': function (browser) {
 
-    //     const contactUsPage = browser.page.contactUsPage();
+        const contactUsPage = browser.page.contactUsPage();
   
-    //     contactUsPage
-    //       .navigate()
-    //       .waitForElementVisible('body')
-    //       .setValue("@subject_heading","Customer service")
-    //       .setValue("@email","**hello@gmail.com")
-    //       .setValue("@message","Dear, i hope this message finds you well")
-    //       .click("@submitButton")
-    //       .assert.elementPresent("@alert")
-    //       .assert.containsText("@errorMessage", "Invalid email address.")
+        contactUsPage
+          .navigate()
+          .waitForElementVisible('body')
+          .setValue("@subject_heading","Customer service")
+          .setValue("@email","**hello@gmail.com")
+          .setValue("@message","Dear, i hope this message finds you well")
+          .click("@submitButton")
+          .assert.elementPresent("@alert")
+          .assert.containsText("@errorMessage", "Invalid email address.")
          
-    //     browser.end();  
-    //   },
+        browser.end();  
+      },
   
       
-    // 'invalid email address with double dot in the middle': function (browser) {
+    'invalid email address with double dot in the middle': function (browser) {
 
-    //     const contactUsPage = browser.page.contactUsPage();
+        const contactUsPage = browser.page.contactUsPage();
   
-    //     contactUsPage
-    //       .navigate()
-    //       .waitForElementVisible('body')
-    //       .setValue("@subject_heading","Customer service")
-    //       .setValue("@email","hello@gmail..com.")
-    //       .setValue("@message","Dear, i hope this message finds you well")
-    //       .click("@submitButton")
-    //       .assert.elementPresent("@alert")
-    //       .assert.containsText("@errorMessage", "Invalid email address.")
+        contactUsPage
+          .navigate()
+          .waitForElementVisible('body')
+          .setValue("@subject_heading","Customer service")
+          .setValue("@email","hello@gmail..com.")
+          .setValue("@message","Dear, i hope this message finds you well")
+          .click("@submitButton")
+          .assert.elementPresent("@alert")
+          .assert.containsText("@errorMessage", "Invalid email address.")
          
-    //     browser.end();  
-    //   },
+        browser.end();  
+      },
   
     
 
-    // 'invalid message': function (browser) {
+    'invalid message': function (browser) {
         
-    //     const contactUsPage = browser.page.contactUsPage();
+        const contactUsPage = browser.page.contactUsPage();
 
-    //     contactUsPage
-    //       .navigate()
-    //       .waitForElementVisible('body')
-    //       .setValue("@email","hello@gmail.com")
-    //       .setValue("@subject_heading","Customer service")
-    //       .setValue("@message","     ")
-    //       .setValue("@order_reference","demo_2")
-    //       .setValue("@attach_file", __dirname + '/test_upload_files/valid_file_upload.txt')
-    //       .click("@submitButton")
-    //       .assert.elementPresent("@alert")
+        contactUsPage
+          .navigate()
+          .waitForElementVisible('body')
+          .setValue("@email","hello@gmail.com")
+          .setValue("@subject_heading","Customer service")
+          .setValue("@message","     ")
+          .setValue("@order_reference","demo_2")
+          .setValue("@attach_file", __dirname + '/test_upload_files/valid_file_upload.txt')
+          .click("@submitButton")
+          .assert.elementPresent("@alert")
   
          
-    //     browser.end();  // Close the browser session
-    //   },
+        browser.end();  // Close the browser session
+      },
 
     'invalid file extension': function (browser) {
         
@@ -198,13 +198,12 @@ module.exports = {
           .setValue("@subject_heading","Customer service")
           .setValue("@message","     ")
           .setValue("@order_reference","demo_2")
-          .setValue("@attach_file", __dirname + '/test_upload_files/invalid_file_upload.xtx')
+          .setValue("@attach_file", __dirname + '/test_upload_files/invalid_file_upload.err')
           .click("@submitButton")
-        //   .assert.elementPresent("@alert")
-          .assert.elementPresent("@success")
+          .assert.elementPresent("@alert")
   
         browser.end();  // Close the browser session
-        console.log(__dirname + '/test_upload_files/invalid_file_upload.xtx')
+        
       },
   
   };
