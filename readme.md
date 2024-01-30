@@ -20,7 +20,7 @@ The tests covered Performing search for "dress" and Verifying the search results
 
 ### Deliverables:
 
--  HTML report for the results. [here](https://output.circle-artifacts.com/output/job/37b9928d-7ebb-42c0-b7fb-df8807795a16/artifacts/0/API_testing/tests_output/test-report.html)
+-  HTML report for the results [here](https://output.circle-artifacts.com/output/job/3df3006e-90d8-4109-8722-b4ac47b94e29/artifacts/0/UI_automation_testing/tests_output/nightwatch-html-report/index.html)
 -  Bugs Report
 -  document for the test cases.
 
@@ -33,7 +33,7 @@ Testing was done using [jest](https://jestjs.io/) as a test runner
 
 ### Deliverables:
 
-- HTML for test results. [here]([https://output.circle-artifacts.com/output/job/f00ba8f5-6a43-4f98-af91-affbbb09e575/artifacts/0/API_testing/tests_output/test-report.html](https://output.circle-artifacts.com/output/job/37b9928d-7ebb-42c0-b7fb-df8807795a16/artifacts/0/API_testing/tests_output/test-report.html))
+- HTML for test results [here](https://output.circle-artifacts.com/output/job/37b9928d-7ebb-42c0-b7fb-df8807795a16/artifacts/0/API_testing/tests_output/test-report.html)
 -  Bugs Report
 
 
