@@ -1,34 +1,3 @@
-# version: '2.1'
-# jobs:
-#   build:
-#     docker:
-#       - image: circleci/node:14
-#     steps:
-#       - checkout
-#       - run:
-#           name: Install npm dependencies
-#           command: |
-#             npm install --save
-#       - run:
-#           name: Run Server
-#           command: |
-#             npm run dev 
-#           background: true
-#       - run:
-#           name: Wait for Server
-#           command: sleep 5
-#       - run:
-#           name: Run Tests
-#           command: |
-#             npm run test   
-            
-                 
-# workflows:
-#   test:
-#     jobs:
-#         - build
-
-
 version: '2.1'
 orbs: 
   node: circleci/node@4.7 
