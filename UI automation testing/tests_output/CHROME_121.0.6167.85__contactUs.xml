@@ -1,99 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="3"
-            tests="11">
+            failures="0"
+            tests="1">
 
   <testsuite name="contactUs"
-    errors="0" failures="3" hostname="" id="" package="contactUs" skipped="0"
-    tests="11" time="126.3" timestamp="">
+    errors="0" failures="0" hostname="" id="" package="contactUs" skipped="0"
+    tests="1" time="10.62" timestamp="">
   
-    <testcase name="error message content" classname="contactUs" time="6.025" assertions="3">
-
-    
-
-      <failure message="Failed [equal]: (list contains 3 items) - expected &#34;3&#34; but got: &#34;1&#34; (0ms)">    at NightwatchAPI.&lt;anonymous&gt; (/Users/mn3n3/Documents/GitHub/API_testing/UI automation testing/nightwatch_tests/contactUs.js:12:25)</failure>
-
-    
-    </testcase>
-  
-    <testcase name="required fields only" classname="contactUs" time="1.869" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="all fields" classname="contactUs" time="6.127" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="without email" classname="contactUs" time="5.956" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="without message" classname="contactUs" time="5.839" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="without subject heading" classname="contactUs" time="5.725" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="invalid email address" classname="contactUs" time="5.949" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="invalid email address with special character" classname="contactUs" time="11.03" assertions="2">
-
-      <failure message="Testing if element &lt;Element [name=@alert]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5139ms)">    at invalid email address with special character (/Users/mn3n3/Documents/GitHub/API_testing/UI automation testing/nightwatch_tests/contactUs.js:145:19)</failure>
-
-    
-    </testcase>
-  
-    <testcase name="invalid email address with double dot in the middle" classname="contactUs" time="1.660" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="invalid message" classname="contactUs" time="11.24" assertions="2">
-
-      <failure message="Testing if element &lt;Element [name=@alert]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5148ms)">    at invalid message (/Users/mn3n3/Documents/GitHub/API_testing/UI automation testing/nightwatch_tests/contactUs.js:184:19)</failure>
-
-    
-    </testcase>
-  
-    <testcase name="invalid file extension" classname="contactUs" time="1.724" assertions="2">
+    <testcase name="invalid file extension" classname="contactUs" time="5.312" assertions="2">
 
     
 
