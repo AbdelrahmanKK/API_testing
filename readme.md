@@ -20,7 +20,7 @@ The tests covered Performing search for "dress" and Verifying the search results
 
 ### Deliverables:
 
--  HTML report for the results. [here](https://output.circle-artifacts.com/output/job/18b34c94-5965-4572-b473-80ef02ef6784/artifacts/0/UI_automation_testing/tests_output/nightwatch-html-report/index.html)
+-  HTML report for the results. [here](https://output.circle-artifacts.com/output/job/37b9928d-7ebb-42c0-b7fb-df8807795a16/artifacts/0/API_testing/tests_output/test-report.html)
 -  Bugs Report
 -  document for the test cases.
 
