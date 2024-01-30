@@ -2,7 +2,8 @@
     "reporters": [
 	"default",
 	["./node_modules/jest-html-reporter", {
-		"pageTitle": "Test Report"
+		"pageTitle": "mock-user-auth API test report",
+        "outputPath": "API testing/tests_output/test-report.html"
 	}]
 ]
 }

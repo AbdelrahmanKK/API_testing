@@ -2,11 +2,10 @@ const supertest = require('supertest');
 const request = supertest('http://localhost:3000');
 
 
-
 describe('API testing', () => {
     let token;
 
-    test('should create new user and return a 200 response with success message and user token', async () => {
+    test('should create new user and return user token', async () => {
         const response = await request
             .post('/api/v1/users')
             .send({
@@ -23,7 +22,7 @@ describe('API testing', () => {
                
     });
 
-    test('should authenticate the user and return its token',async () =>{
+    test('should authenticate the user and return his token',async () =>{
         const response = await request
             .post('/api/v1/auth')
             .send({
@@ -52,7 +51,7 @@ describe('API testing', () => {
 
 
 
-    test('should PATCH USER BY TOKEN', async () => {
+    test('should update name, email and password of the user using his token', async () => {
         const response = await request
         .patch ("/api/v1/users")
         .set('Authorization', token) 
@@ -69,7 +68,7 @@ describe('API testing', () => {
           })    
     });
 
-    test('should authenticate the user and return its token',async () =>{
+    test('should authenticate the user and return his token',async () =>{
         const response = await request
             .post('/api/v1/auth')
             .send({
@@ -85,7 +84,7 @@ describe('API testing', () => {
               });
     });
 
-    test('DELETE USER BY TOKEN', async ()=>{
+    test('should delete the user using his token', async ()=>{
         const response = await request
         .delete ("/api/v1/users")
         .set('Authorization', token)

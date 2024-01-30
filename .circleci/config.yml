@@ -36,7 +36,28 @@ orbs:
 
 
 jobs:
-  test: 
+  api_test:
+    docker:
+      - image: circleci/node:14
+    steps:
+      - checkout
+      - run:
+          name: Install npm dependencies
+          command: |
+            npm install --save
+      - run:
+          name: Run Server
+          command: |
+            npm run dev 
+          background: true
+      - run:
+          name: Wait for Server
+          command: sleep 5
+      - run:
+          name: Run Tests
+          command: |
+            npm run test:jest 
+  UI_test: 
     docker: 
       - image: cimg/node:lts-browsers 
     steps: 
@@ -46,8 +67,8 @@ jobs:
       - run:
           command: |
             npm run test:nightwatch 
-      - store_artifacts:
-          path: tests_output
+      # - store_artifacts:
+      #     path: tests_output
                     
 
 
@@ -55,4 +76,5 @@ jobs:
 workflows:
   e2e-test:
     jobs:
-        - test
+        - api_test
+        - UI_test

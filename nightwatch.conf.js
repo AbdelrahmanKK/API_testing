@@ -15,11 +15,12 @@ module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
 //   src_folders: ['test','nightwatch/examples'],
-  src_folders: ['nightwatch_tests'],
-  output_folder: 'tests_output',
+  skip_testcases_on_fail: false,
+  src_folders: ['UI automation testing/nightwatch_tests'],
+  output_folder: 'UI automation testing/tests_output',
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
-//   page_objects_path: ['nightwatch/page-objects'],
+  page_objects_path: ['UI automation testing/page-objects'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
 //   custom_commands_path: ['nightwatch/custom-commands'],
@@ -40,6 +41,7 @@ module.exports = {
   },
 
   test_settings: {
+
     default: {
       disable_error_log: false,
       launch_url: 'http://localhost',
